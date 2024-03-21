@@ -1,6 +1,6 @@
 # PROYECTO NOC
 
-EL obketivo es crear una serie de tareas usando Arquitectura Limpia con Typescript
+EL objetivo es crear una serie de tareas usando Arquitectura Limpia con Typescript
 
 # dev
 1. Clonar el archivo env.template a .env
@@ -8,10 +8,11 @@ EL obketivo es crear una serie de tareas usando Arquitectura Limpia con Typescri
 3. Ejecutar el comando ``` npm install ```
 4. Levantar las bases de datos con el comando 
     ``` docker compose up -d ```
-5. Ejecutar ``` npm run dev ```
+5. Ejecutar el comando ```npx prisma migrate dev```
+6. Ejecutar ``` npm run dev ```
 
 # Obtener Gmail Key 
 
 [ Google AppPasswords ] ( https://myaccount.google.com/apppasswords )
 
-* Inspirado en el proyecto NOC de Fernando Herrera => DevTalles *
+* Inspirado en el proyecto NOC de Fernando Herrera => DevTalles

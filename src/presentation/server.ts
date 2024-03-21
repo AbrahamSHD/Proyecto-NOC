@@ -27,6 +27,7 @@ export class Server{
 
         
         console.log('Server started...')
+
         // Todo: Mandar Email
 
         // new SendEmailLogs(
@@ -45,18 +46,18 @@ export class Server{
 
         // console.log( logs )
 
-        CronService.createJob( 
-            '*/5 * * * * *',
-            () => {
-                const url = 'https://www.google.com'
+        // CronService.createJob( 
+        //     '*/5 * * * * *',
+        //     () => {
+        //         const url = 'https://www.google.com'
 
-                new CheckServiceMultiple(
-                    [fsLogRepository, mongoLogRepository, postgresLogRepository],
-                    () => console.log(`${url} is ok`),
-                    ( error ) => console.log( error )
-                ).execute( url )
-            }
-        )
+        //         new CheckServiceMultiple(
+        //             [fsLogRepository, mongoLogRepository, postgresLogRepository],
+        //             () => console.log(`${url} is ok`),
+        //             ( error ) => console.log( error )
+        //         ).execute( url )
+        //     }
+        // )
         
     }
 
