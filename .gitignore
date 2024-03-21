@@ -1,8 +1,10 @@
 
 node_modules/
 dist/
-nodemon.json
-
 logs/
+mongo/
+postgres/
+migrations/
 
+nodemon.json
 .env

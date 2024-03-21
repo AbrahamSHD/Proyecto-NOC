@@ -1,4 +1,4 @@
-import { LogEntity, LogSeverityLevel } from "../entities/log.entiti";
+import { LogEntity, LogSeverityLevel } from "../entities/log.entity";
 
 export abstract class LogRepository {
     
